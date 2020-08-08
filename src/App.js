@@ -1,10 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-function abrirDealer(){
 
-}
 function App() {
+  const [count, setCount] = React.useState(0)
+
   return (
     <div className="App">
       <header className="App-header">
@@ -12,8 +12,8 @@ function App() {
         <p>
           Edit <code>Hola mundo</code> and save to reload.
         </p>
-        <button className="botonComprarFaso" onclick="abrirDealer" >Comprar faso</button>
-        
+        <button className="botonComprarFaso" onClick={() => setCount(count + 100)}>Comprar faso</button>
+        <h5>{count} Fasos</h5>
         <a
           className="App-link"
           href="https://reactjs.org"
