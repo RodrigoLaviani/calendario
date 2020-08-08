@@ -1,10 +1,20 @@
 .App {
-  text-align: center;
+  text-align: justify;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-logo{
+  height: 40vmin!important;
+  pointer-events: none!important;
+}
+
+#txtIdImg{
+  height: 20vmin;
+  pointer-events: visiblePainted;
+}
+
+.botonComprarFaso {
+  color: red;
+  background: black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
